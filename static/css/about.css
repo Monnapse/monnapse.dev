@@ -1,0 +1,36 @@
+.container {
+    position: absolute;
+    width: auto;
+    height: min-content;
+    right: 0;
+    bottom: 0;
+}
+
+.about {
+    width: 50%;
+    height: fit-content;
+    margin-left: 5vw;
+}
+
+.text {
+    white-space: pre-line;
+    font-size: 2vw;
+}
+
+@media (max-width: 550px) {
+    .container {
+        right: 50%;
+        top: 100vh;
+        bottom: 0;
+    }
+    .about {
+        top: 220px;
+        width: 90%;
+    }
+    .text {
+        font-size: 4vw;
+    }
+    .title {
+        font-size: 7vw;
+    }
+}
