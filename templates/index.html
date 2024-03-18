@@ -6,14 +6,9 @@
   <title>{{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename = 'assets/web/Logo.png') }}">
+  <link rel="icon" type="image/x-icon" href="assets/web/Logo.png">
 
-
-  <link rel="preload" href="{{ url_for('static', filename = 'assets/web/backdrop.png') }}" as="image">
-  <link rel="preload" href="{{ url_for('static', filename = 'assets/web/Logo.png') }}" as="image">
-  <link rel="preload" href="{{ url_for('static', filename = 'assets/web/rocket.png') }}" as="image">
-
-  <link rel="preload" href="static/css/global.css" as="style">
+  <link rel="preload" href="/static/css/global.css" as="style">
 
   <link rel="stylesheet" href="static/css/menu.css">
   <script src="static/js/menu.js"></script>
