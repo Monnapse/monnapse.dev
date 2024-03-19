@@ -1,0 +1,20 @@
+#content a {
+    text-decoration: none;
+    color: #FF07C9;
+    font-weight: bold;
+}
+
+#content a:hover {
+    text-decoration: underline;
+}
+
+#main-image {
+    border-radius: 50px;
+}
+#main-title {
+    color: rgba(255,255,255, 0.75);
+    font-weight: bolder;
+    font-size: 4vw;
+    margin-top: -4vw;
+    text-align: center;
+}
