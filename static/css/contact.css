@@ -8,8 +8,6 @@
 
     width: fit-content;
 
-    left: 25%;
-    top: 40%;
 }
 .contact-element{
     flex:none;
@@ -43,15 +41,8 @@
     text-decoration: underline;
 }
 
-@media (max-width: 1400px) {
-    .contact {
-        left: 15%;
-    }
-}
+@media (max-width: 1400px) {}
 @media (max-width: 1150px) {
-    .contact {
-        left: 15%;
-    }
     .contact-link{
         font-size: 150%;
     }
@@ -64,7 +55,6 @@
         height: max-content;
         width: min-content;
         display: inline;
-        left: 10%;
     }
     .contact-element{
         flex:auto;
@@ -77,6 +67,6 @@
         font-size: 100%;
     }
     .contact-link-name{
-        font-size: 40%;
+        display: none;
     }
 }

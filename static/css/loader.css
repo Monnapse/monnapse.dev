@@ -12,7 +12,7 @@
 .overlay h6 {
     color: aliceblue;
     margin-top: 25px;
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .load-content {
@@ -45,3 +45,9 @@
 .rotate-90-vertical-bck{-webkit-animation:rotate-90-vertical-bck 1.5s cubic-bezier(.25,.46,.45,.94) 0s infinite both;animation:rotate-90-vertical-bck 1.5s cubic-bezier(.25,.46,.45,.94) 0s infinite both}
 .slide-in-top{-webkit-animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both}
 .puff-out-center{-webkit-animation:puff-out-center 1s cubic-bezier(.165,.84,.44,1.000) both;animation:puff-out-center 1s cubic-bezier(.165,.84,.44,1.000) both}
+
+@media (max-width: 1150px) {
+    .overlay h6 {
+        font-size: 1em;
+    }
+}

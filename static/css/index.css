@@ -105,6 +105,10 @@
     margin-left: 25px; /* Adjust the spacing during hover */
 }
 
+.links {
+    margin-top: 75px;
+}
+
 /* CSS for screens 768px and smaller */
 @media (max-width: 1600px) {
     .backdrop {
@@ -123,4 +127,10 @@
     /*.monkey {
         display: none;
     }*/
+}
+
+@media (max-height: 870px) {
+    .links {
+        margin-top: 10px;
+    }
 }
