@@ -6,7 +6,7 @@ tags:
     - Pyrotechnics 
     - ESP32
 created: October 18 2023 03:00 PM MST
-updated: October 18 2023 01:00 PM MST
+updated: April 18 2024 11:54 AM MST
 ---
 
 <img src="/assets/img/blaze/banner.png" id="main-image" width="1250">
