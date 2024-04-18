@@ -9,7 +9,7 @@ created: October 18 2023 03:00 PM MST
 updated: October 18 2023 01:00 PM MST
 ---
 
-<img src="/assets/img/blaze.png" id="main-image">
+<img src="/assets/img/blaze/blaze.png" id="main-image" height="650">
 <h1 id="main-title">Blaze</h1>
 <div class="moveable-element line-with-circles">
     <div class="circle left-circle"></div>

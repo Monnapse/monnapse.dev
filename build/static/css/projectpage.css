@@ -21,8 +21,8 @@
 }
 
 .page img {
-    width: 97%;
-    height: auto;
+    /*width: 97%;*/
+    /*height: auto;*/
 }
 
 .dates {
@@ -99,13 +99,29 @@
 .w-70 {
     width: 70% !important;
 }
+  
+.grid {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
 
 /* Screen Size Adjustments */
+@media (max-width: 2450px) {
+    .grid { grid-template-columns: repeat(1, 1fr); }
+    .grid img { 
+        width: 100%; 
+        height: auto;
+    }
+}
+
 @media (max-width: 1400px) {
     .page {
        height: 82vh; 
     }
 }
+
 @media (max-height: 860px) {
     .page {
        height: 75vh; 
