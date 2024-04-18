@@ -1,0 +1,29 @@
+.container {
+    width: min-content;
+    height: max-content;
+}
+
+.main {
+    width: 25vw;
+    height: auto;
+
+    position: relative;
+    
+    margin-bottom: 50px;
+}
+
+.return{
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 100%;
+    margin: 0;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 8vw;
+}
+
+.return:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,84 @@
+.container {
+    width: auto;
+    height: auto;
+    right: 0;
+}
+
+.projects-list {
+    margin-left: -50px;
+    display: flex;
+    height: 70vh;
+}
+
+.projects {
+    margin: 0;
+    left: 5%;
+    padding-left: 150px;
+}
+
+.new {
+    position: absolute;
+    left: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 100px;
+
+    margin-top: 0.875vw;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12pt;
+    font-weight: 100;
+}
+
+.project-ul {
+    overflow: hidden; 
+    overflow-y: scroll;
+    list-style: none;
+    width: 70vw;
+}
+
+.project-line {
+    left: 60px;
+}
+
+.project-button-li {
+    left: 50px;
+    margin-bottom: 10px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: white;
+    font-size: 28pt;
+    font-weight: 100;
+    transition: padding-left 0.25s ease-in-out;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+
+}
+.project-link:hover {
+    padding-left: 50px
+}
+
+.tags {
+    margin-left: 15px;
+    font-size: 12pt;
+    font-weight: 100;
+}
+
+/* Screen Size Adjustments */
+@media (max-width: 900px) {
+    .projects {
+        padding-left: 25px;
+    }
+    .project-link {
+        font-size: 16pt;
+    }
+    .tags {
+        font-size: 12pt;
+    }
+}

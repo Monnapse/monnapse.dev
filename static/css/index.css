@@ -1,0 +1,208 @@
+/* Index */
+
+.container {
+    width: auto;
+    height: auto;
+    right: 27%;
+}
+
+.main-title {
+    width: 100%;
+    line-height: 6vw;
+    font-size: 150px;
+    text-align: center;
+    line-height: 120px;
+}
+
+.info-container-outer {
+    width: auto;
+    padding-left: 250px;
+}
+
+.info-container {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-70%);
+    width: auto;
+    height: auto;
+}
+
+.underline {
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: 1000;
+    text-decoration-thickness: 6px;
+    line-height: 0px;
+}
+
+.info-first {
+    text-align: center;
+}
+
+.info-second {
+    width: inherit;
+    height: auto;
+}
+
+.info-vertical {
+    width: 30vw;
+}
+
+.header-3 {
+    font-size: 72px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-images {
+    position: absolute;
+    left: 0;
+    /*display: flex;
+    flex-direction: column;  Stack elements vertically */
+    height: auto;
+
+    transform: translateY(40%);
+    width: min-content;
+}
+
+.info-images img {
+    width: 3vw;
+    height: auto;
+    padding-bottom: 15px;
+}
+
+.info {
+    position: relative;
+    width: 80%;
+    right: 0;
+    font-size: 35px;
+    height: fit-content;
+    padding-left: 20px;
+}
+.info p {
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 0;
+}
+
+.link {
+    display: block;
+    padding-top: 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 35px;
+}
+.arrow {
+    vertical-align: middle;
+    margin-left: 4px; /* Adjust the spacing between the text and the arrow */
+    transition: all 0.25s ease-in-out;
+    width: 36px;
+    height: auto;
+    padding-left: 10px;
+}
+.link:hover {
+    text-decoration: underline;
+}
+.link:hover .arrow {
+    margin-left: 25px; /* Adjust the spacing during hover */
+}
+
+.links {
+    margin-top: 35px;
+}
+
+/* CSS for screens 768px and smaller */
+@media (max-width: 2200px) {
+    .info p, .link {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .backdrop {
+        width: 85vw;
+        height: auto;
+        padding-bottom: 100px;
+        z-index: 1;
+    }
+    .monkey {
+        width: 55vw;
+    }
+}
+
+@media (max-width: 1300px) {
+    .container {
+        right: 50%;
+        top: 100vh;
+    }
+    .info-container-outer {
+        padding-left: 0%;
+        left: 10%;
+    }
+    .info-container {
+        position: relative;
+        width: 90%;
+    }
+    .main-title {
+        
+    }
+    .info-vertical {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 870px) {
+    .main-title {
+        font-size: 85px;
+        line-height: 70px;
+    }
+    .underline {
+        font-size: 12px;
+        text-decoration-thickness: 3px;
+    }
+    .header-3 {
+        font-size: 35px;
+    }
+    .info-vertical {
+        width: 80vw;
+    }
+    .info p, .link {
+        font-size: 20px;
+    }
+    .arrow {
+        width: 26px;
+    }
+}
+
+@media (max-height: 870px) {
+    .links {
+        margin-top: 10px;
+    }
+}
+
+/* CSS for screens 768px and smaller */
+@media (max-width: 500px) {
+    .main-title {
+        font-size: 45px;
+        line-height: 40px;
+    }
+    .underline {
+        font-size: 12px;
+        text-decoration-thickness: 3px;
+    }
+    .header-3 {
+        font-size: 25px;
+    }
+    .info-vertical {
+        width: 80vw;
+    }
+    .info p, .link {
+        font-size: 18px;
+    }
+    .arrow {
+        width: 25px;
+    }
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+        <title>Docs Test Something</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="icon" type="image/x-icon" href="/assets/web/Logo.png">
+
+        <link rel="preload" href="/static/css/global.css" as="style">
+        <link rel="preload" href="/static/js/global.js" as="script">
+
+        <link rel="stylesheet" href="/static/css/markdown.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/global.css" media="print" onload="this.media='all'">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <script src="/static/js/global.js"></script>
+        
+        <link rel="stylesheet" href="/static/js/project.js">
+        <link rel="stylesheet" href="/static/css/projectpage.css">
+</head>
+
+<body>
+        <img src="/assets/web/backdrop.png" alt="Background Image" class="background-image unselectable">
+
+        
+          <div class="content" id="content">
+            <link rel="stylesheet" href="/static/css/docs.css">
+            <link rel="stylesheet" href="/static/css/highlight-dark-theme.css">
+            <link rel="stylesheet" href="/static/css/docs-markdown.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+            <script src="/static/js/docs.js"></script>
+            
+            <script>hljs.highlightAll();</script>
+
+            
+            
+            
+            <div class="files">
+                <ul class="files-ul clearfix">
+                    <h6 class="package-name">docstest</h6>
+                    <a class="file-button" href="/docs/docstest/">Overview</a>
+
+                    
+
+                    
+                      
+                      
+                        <li class="file">
+                                               
+                          <a class="file-button" href="/docs/docstest/"></a>
+                          
+                          
+                      
+                    
+                      
+                      
+                        <li class="file">
+                          
+                            
+                            
+                            <!-- Check if its not already built -->
+                            
+                            
+
+                            
+                              <!-- Save to array -->
+                              
+                              
+
+                              <img class="folder-arrow" src="/assets/web/Arrow-2.png">
+                              <button onclick="openDirectory(this)" class="file-button folder-button">TestFolder</button>
+
+                              <!--<ul class="files-ul folder-content clearfix show">-->
+                              <ul class="files-ul folder-content clearfix">
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                    
+                                    <li class="file">
+                                      <a class="file-button" href="/docs/docstest/TestFolder/Updates">Updates</a>
+                                    </li>
+                                  
+                                
+                                  
+                                  
+                                    
+                                    <li class="file">
+                                      <a class="file-button" href="/docs/docstest/TestFolder/something">something</a>
+                                    </li>
+                                  
+                                
+                                  
+                                  
+                                    
+                                    <li class="file">
+                                      <a class="file-button" href="/docs/docstest/TestFolder/test">test</a>
+                                    </li>
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                              </ul>
+                            
+                          </li>
+                        
+                      
+                    
+                      
+                      
+                        <li class="file">
+                          
+                            
+                            
+                            <!-- Check if its not already built -->
+                            
+                            
+
+                            
+                          </li>
+                        
+                      
+                    
+                      
+                      
+                        <li class="file">
+                          
+                            
+                            
+                            <!-- Check if its not already built -->
+                            
+                            
+
+                            
+                          </li>
+                        
+                      
+                    
+                      
+                      
+                        <li class="file">
+                                               
+                          <a class="file-button" href="/docs/docstest/test">test</a>
+                          
+                          
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                </ul>
+            </div>
+            
+            <div class="doc-scroll clearfix">
+                <div class="doc-content">
+                  <p>A <strong>debounce</strong> pattern is a coding technique that prevents a function from running too many times or an input from triggering multiple times. The following scripting scenarios illustrate debounce as a best practice.</p>
+
+<h2 id="detecting-collisions">Detecting Collisions</h2>
+
+<p>Suppose you want to create a hazardous trap part that inflicts 10 damage when touched. An initial implementation might use a basic <code class="language-plaintext highlighter-rouge">Class.BasePart.Touched</code> connection and a <code class="language-plaintext highlighter-rouge">damagePlayer</code> function like this:</p>
+
+<p>```lua title=’Script - Damage Player’
+local part = script.Parent</p>
+
+<p>local function damagePlayer(otherPart)
+	print(part.Name .. “ collided with “ .. otherPart.Name)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>local humanoid = otherPart.Parent:FindFirstChildWhichIsA("Humanoid")
+if humanoid then
+	humanoid.Health -= 10  -- Reduce player health
+end end
+</code></pre></div></div>
+
+<p>part.Touched:Connect(damagePlayer)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+While logical at first glance, testing will show that the `Class.BasePart.Touched|Touched` event fires multiple times in quick succession based on subtle physical collisions.
+
+&lt;img src="../assets/scripting/scripts/Touched-Event-No-Debounce.png" width="780" /&gt;
+
+To avoid causing excessive damage on initial contact, you can add a debounce system which enforces a cooldown period on damage through an [instance attribute](../studio/instance-attributes.md).
+
+```lua title='Script - Damage Player Using Debounce' highlight='10, 11, 13, 14'
+local part = script.Parent
+
+local RESET_TIME = 1
+
+local function damagePlayer(otherPart)
+	print(part.Name .. " collided with " .. otherPart.Name)
+
+	local humanoid = otherPart.Parent:FindFirstChildWhichIsA("Humanoid")
+	if humanoid then
+		if not part:GetAttribute("Touched") then
+			part:SetAttribute("Touched", true)  -- Set attribute to true
+			humanoid.Health -= 10  -- Reduce player health
+			task.wait(RESET_TIME)  -- Wait for reset duration
+			part:SetAttribute("Touched", false)  -- Reset attribute
+		end
+	end
+end
+
+part.Touched:Connect(damagePlayer)
+</code></pre></div></div>
+
+<h2 id="triggering-sounds">Triggering Sounds</h2>
+
+<p>Debounce is also useful when working with sound effects, such as playing a sound when two parts collide (<code class="language-plaintext highlighter-rouge">Class.BasePart.Touched|Touched</code>), or playing a sound on the <code class="language-plaintext highlighter-rouge">Class.GuiButton.Activated|Activated</code> event when a user interacts with an on-screen button. In both cases, calling <code class="language-plaintext highlighter-rouge">Class.Sound:Play()</code> starts playback from the beginning of its track and — without a debounce system — the sound may play multiple times in quick succession.</p>
+
+<p>To prevent sound overlap, you can debounce using the <code class="language-plaintext highlighter-rouge">Class.Sound.IsPlaying|IsPlaying</code> property of the <code class="language-plaintext highlighter-rouge">Class.Sound</code> object:</p>
+
+<p>```lua title=’Script - Play Collision Sound Using Debounce’ highlight=’5, 7-9’
+local projectile = script.Parent</p>
+
+<p>local function playSound()
+	– Find child sound on the part
+	local sound = projectile:FindFirstChild(“Impact”)
+	– Play the sound only if it’s not already playing
+	if sound and not sound.IsPlaying then
+		sound:Play()
+	end
+end</p>
+
+<p>projectile.Touched:Connect(playSound)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+```lua title='Script - Play Button Click Using Debounce' highlight='5, 7-9'
+local button = script.Parent
+
+local function onButtonActivated()
+	-- Find child sound on the button
+	local sound = button:FindFirstChild("Click")
+	-- Play the sound only if it's not already playing
+	if sound and not sound.IsPlaying then
+		sound:Play()
+	end
+end
+
+button.Activated:Connect(onButtonActivated)
+</code></pre></div></div>
+
+<h2 id="pickup-effects">Pickup Effects</h2>
+
+<p>Experiences often include collectible pickups in the 3D world such as medi-kits, ammo packs, and more. If you design these pickups to remain in the world for players to grab again and again, a “cooldown” time should be added before the pickup refreshes and reactivates.</p>
+
+<p>Similar to <a href="#detecting-collisions">detecting collisions</a>, you can manage the debounce state with an <a href="../studio/instance-attributes.md">instance attribute</a>, and visualize the cooldown period by changing the part’s <code class="language-plaintext highlighter-rouge">Class.BasePart.Transparency|Transparency</code>.</p>
+
+<p>```lua title=’Script - Health Pickup Using Debounce’ highlight=’10, 11, 13, 15-17’
+local part = script.Parent
+part.Anchored = true
+part.CanCollide = false</p>
+
+<p>local COOLDOWN_TIME = 5</p>
+
+<p>local function healPlayer(otherPart)
+	local humanoid = otherPart.Parent:FindFirstChildWhichIsA(“Humanoid”)
+	if humanoid then
+		if not part:GetAttribute(“CoolingDown”) then
+			part:SetAttribute(“CoolingDown”, true)  – Set attribute to true
+			humanoid.Health += 25  – Increase player health
+			part.Transparency = 0.75  – Make part semi-transparent to indicate cooldown state
+			task.wait(COOLDOWN_TIME)  – Wait for cooldown duration
+			part.Transparency = 0  – Reset part to fully opaque
+			part:SetAttribute(“CoolingDown”, false)  – Reset attribute
+		end
+	end
+end</p>
+
+<p>part.Touched:Connect(healPlayer)
+```</p>
+
+<Alert severity="info">
+This cooldown concept can be applied to other scenarios as well, such as creating a "reload" time for a rocket launcher to limit how frequently players can fire rockets.
+</Alert>
+
+                </div>
+            </div>
+          </div>
+        
+</body>
+
+</html>

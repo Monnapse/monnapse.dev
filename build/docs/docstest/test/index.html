@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+        <title>Docs Test Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="icon" type="image/x-icon" href="/assets/web/Logo.png">
+
+        <link rel="preload" href="/static/css/global.css" as="style">
+        <link rel="preload" href="/static/js/global.js" as="script">
+
+        <link rel="stylesheet" href="/static/css/markdown.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/global.css" media="print" onload="this.media='all'">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <script src="/static/js/global.js"></script>
+        
+        <link rel="stylesheet" href="/static/js/project.js">
+        <link rel="stylesheet" href="/static/css/projectpage.css">
+</head>
+
+<body>
+        <img src="/assets/web/backdrop.png" alt="Background Image" class="background-image unselectable">
+
+        
+          <div class="content" id="content">
+            <link rel="stylesheet" href="/static/css/docs.css">
+            <link rel="stylesheet" href="/static/css/highlight-dark-theme.css">
+            <link rel="stylesheet" href="/static/css/docs-markdown.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+            <script src="/static/js/docs.js"></script>
+            
+            <script>hljs.highlightAll();</script>
+
+            
+            
+            
+            <div class="files">
+                <ul class="files-ul clearfix">
+                    <h6 class="package-name">docstest</h6>
+                    <a class="file-button" href="/docs/docstest/">Overview</a>
+
+                    
+
+                    
+                      
+                      
+                        <li class="file">
+                                               
+                          <a class="file-button" href="/docs/docstest/"></a>
+                          
+                          
+                      
+                    
+                      
+                      
+                        <li class="file">
+                          
+                            
+                            
+                            <!-- Check if its not already built -->
+                            
+                            
+
+                            
+                              <!-- Save to array -->
+                              
+                              
+
+                              <img class="folder-arrow" src="/assets/web/Arrow-2.png">
+                              <button onclick="openDirectory(this)" class="file-button folder-button">TestFolder</button>
+
+                              <!--<ul class="files-ul folder-content clearfix show">-->
+                              <ul class="files-ul folder-content clearfix">
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                    
+                                    <li class="file">
+                                      <a class="file-button" href="/docs/docstest/TestFolder/Updates">Updates</a>
+                                    </li>
+                                  
+                                
+                                  
+                                  
+                                    
+                                    <li class="file">
+                                      <a class="file-button" href="/docs/docstest/TestFolder/something">something</a>
+                                    </li>
+                                  
+                                
+                                  
+                                  
+                                    
+                                    <li class="file">
+                                      <a class="file-button" href="/docs/docstest/TestFolder/test">test</a>
+                                    </li>
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                                  
+                                  
+                                
+                              </ul>
+                            
+                          </li>
+                        
+                      
+                    
+                      
+                      
+                        <li class="file">
+                          
+                            
+                            
+                            <!-- Check if its not already built -->
+                            
+                            
+
+                            
+                          </li>
+                        
+                      
+                    
+                      
+                      
+                        <li class="file">
+                          
+                            
+                            
+                            <!-- Check if its not already built -->
+                            
+                            
+
+                            
+                          </li>
+                        
+                      
+                    
+                      
+                      
+                        <li class="file">
+                                               
+                          <a class="file-button" href="/docs/docstest/test">test</a>
+                          
+                          
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                </ul>
+            </div>
+            
+            <div class="doc-scroll clearfix">
+                <div class="doc-content">
+                  <h1 id="server">Server</h1>
+
+<p>Roblox experiences are multiplayer by default and run in a client-server model.
+The Roblox <strong>server</strong> is the ultimate authority for maintaining the experience’s
+state, and is responsible for keeping all connected clients in sync with the
+server.</p>
+
+<figure>
+  <img alt="Server with connections to three client devices" src="../assets/scripting/client-server/Client-Server-Model.png" width="100%" />
+  <figcaption>Server with connections to three client devices</figcaption>
+</figure>
+
+<h1 id="client">Client</h1>
+
+<p>When an experience runs, Roblox copies a version of the “edit” data model that
+you built and published from Studio and runs it on Roblox servers as the
+“runtime” data model.</p>
+
+<p>Connected clients also receive a copy of the runtime data model and any
+initialization of the player occurs, such as initializing a player’s backpack
+(inventory) or local user interface. When an experience has
+<code class="language-plaintext highlighter-rouge">Class.Workspace.StreamingEnabled</code> set to true, the server initially only sends
+a subset of content under <code class="language-plaintext highlighter-rouge">Class.Workspace</code> that is closest to the client. The
+client then renders the 3D world and begins running any
+applicable scripts.</p>
+
+<figure>
+  <img alt="Mapping of objects between 'edit' and 'runtime' data models" src="../assets/scripting/client-server/Data-Model-Mapping.png" width="720" />
+  <figcaption></figcaption>
+</figure>
+
+<h1 id="replication">Replication</h1>
+
+<p>The server constantly updates connected clients, keeping everything in sync
+across the server and clients through a process called <strong>replication</strong>, which
+synchronizes the data model, physics simulation, and chat messages. Replication
+logic exists on both the client and server to ensure synchronization.</p>
+
+<h1 id="data">Data</h1>
+
+<p>Data model changes can occur in a variety of cases, such as when something in the 3D
+world is created or a property of the 3D world changes. This typically occurs
+when a script on the server or client makes a change that needs to be reflected
+on the other side of the client-server boundary. The following diagrams show
+common scenarios for data replication.</p>
+
+<GridContainer numColumns="3">
+<figure>
+<p><center>**Client** &rarr; **Server**</center></p>
+<img src="../assets/scripting/client-server/Remote-Flow-Client-Server.png" width="100%" alt="Diagram of one client communicating with the server" />
+Communication from any client to the server. For example, a client presses the <kbd>P</kbd> key to drink an invisibility potion, and tells the server to make that player's character invisible to all other players.
+</figure>
+<figure>
+<p><center>**Server** &rarr; **Client**</center></p>
+<img src="../assets/scripting/client-server/Remote-Flow-Server-Client.png" width="100%" alt="Diagram of the server communicating with one client" />
+Communication from the server to one specific client. For example, a player joins the experience and the server populates that player's inventory with a set of items.
+</figure>
+<figure>
+<p><center>**Server** &rarr; **All Clients**</center></p>
+<img src="../assets/scripting/client-server/Remote-Flow-Server-All-Clients.png" width="100%" alt="Diagram of the server communicating with all connected clients" />
+Communication between the server and all connected clients. For example, displaying a countdown timer to all participants in a race.
+</figure>
+</GridContainer>
+
+<h1 id="physics">Physics</h1>
+
+<p>Roblox uses a rigid body physics engine, which is responsible for
+calculating the movement and interactions of parts in the 3D world. By default,
+all parts in Roblox are rigid bodies and participate in simulated physics,
+unless otherwise specified. You can also group multiple parts together into
+assemblies, which the physics engine treats as a single rigid body.</p>
+
+<p><br />
+&lt;Grid container spacing={2}&gt;
+  &lt;Grid item xs={4} lg={3}&gt;
+    <img src="../assets/physics/assemblies/Assembly-Example-Block.png" width="100%" />
+    &lt;figcaption&gt;1 assembly; 1 part&lt;/figcaption&gt;
+  &lt;/Grid&gt;
+  &lt;Grid item xs={4} lg={3}&gt;
+    <img src="../assets/physics/assemblies/Assembly-Example-Avatar.png" width="100%" />
+    &lt;figcaption&gt;1 assembly; 18 parts&lt;/figcaption&gt;
+  &lt;/Grid&gt;
+  &lt;Grid item xs={8} lg={6}&gt;
+    <img src="../assets/physics/assemblies/Assembly-Example-Ship.png" width="100%" />
+    &lt;figcaption&gt;1 assembly; 179 parts&lt;/figcaption&gt;
+  &lt;/Grid&gt;
+&lt;/Grid&gt;
+<br /></p>
+
+<p>Roblox replicates physics simulation data between the server and clients when
+necessary. To assist with simulation performance, Roblox can assign ownership of
+assemblies to a specific client or server. This means that the client or server
+can be responsible for simulating the physics of that assembly. Other clients
+receive updates about the assembly’s position and movement from the owning
+client or server. Ownership typically happens automatically, but you can assign
+it directly for fine-tuned responsiveness.</p>
+
+<figure>
+  <video src="../assets/physics/network-ownership/Visualization-Demo.mp4" controls="" width="90%" alt="Video showing part ownership indicated through colored outlines"></video>
+  <figcaption>Part ownership indicated through colored outlines</figcaption>
+</figure>
+
+<h1 id="chat">Chat</h1>
+
+<p>Roblox replicates chat messages between the server and client. The server is
+responsible for filtering chat messages and deciding which messages to replicate
+to other clients. For example, the server may filter out messages that contain
+profanity or are too long.</p>
+
+<video src="../assets/players/in-experience-text-chat/Player-Conversation-Bubbles.mp4" controls="" width="90%"></video>
+
+                </div>
+            </div>
+          </div>
+        
+</body>
+
+</html>

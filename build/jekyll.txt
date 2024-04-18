@@ -1,0 +1,8 @@
+bundle exec jekyll serve
+set JEKYLL_ENV=production
+the second command run jekyll build or jekyll server, jekyll serve
+
+jekyll build
+when you use development evn, run this command again:
+
+set JEKYLL_ENV=development

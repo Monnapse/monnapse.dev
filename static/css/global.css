@@ -1,0 +1,258 @@
+/* Global */
+
+* {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    color: #FFE977;
+    font-size: 210px;
+}
+h2 {
+    color: #FFE977;
+    font-size: 175px;
+}
+h3 {
+    color: #FFE977;
+    font-size: 110px;
+}
+h4 {
+    color: #FFE977;
+    font-size: 100px;
+}
+h5 {
+    color: #FFE977;
+    font-size: 75px;
+}
+h6 {
+    color: #FFE977;
+    font-size: 55px;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+	touch-action: none;
+    overflow: hidden;
+
+    background: rgb(33,35,36);
+    /*background: radial-gradient(circle, rgba(49,52,54,1) 0%, rgba(33,35,36,1) 100%);*/
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120vw;
+    height: 120vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(400px); 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.navagation-bar {
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 999998;
+    height: 100px;
+}
+
+.title {
+    font-size: 3vw;
+    color: rgba(255, 255, 255, 0.75);
+    width: 20%;
+}
+
+/* extras */
+.backdrop {
+    width: 75vw;
+    height: auto;
+    padding-bottom: 100px;
+    z-index: 1;
+}
+
+.monkey {
+    width: 35vw;
+    height: auto;
+    z-index: 2;
+}
+
+.center-vertically {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.center-horizontally {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.button-link {
+    background-color: transparent;
+    border: none;
+}
+
+/* line */
+.line-with-circles {
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-seperator{
+    writing-mode: vertical-rl;
+    width: .25vh;
+}
+  
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.line {
+  flex: 1;
+  height: .25vh;
+  background-color: #ffffff;
+}
+
+
+/* Fonts */
+.Manrope {
+    font-family: 'Manrope', serif;
+    font-weight: 200px;
+}
+.Zen-Dots {
+    font-family: 'Zen Dots';
+}
+
+/* Scroll bars */
+
+.clearfix:before,
+.clearfix:after {
+    content: ".";    
+    display: block;    
+    height: 0;    
+    overflow: hidden; 
+}
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; } /* IE < 8 */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    transition: all 1s ease-in-out;
+    background: rgba(240, 240, 240, 0.5); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.75); 
+  }
+
+/* loading screen */
+.image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Cursor */
+.cursor-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#cursor {
+    position: absolute;
+    z-index: 999999999999999999999999999999999999999999999999999999999;
+    pointer-events: none;
+    width: 30px;
+    height: auto;
+    transition: all 3s ease-in-out;
+}
+
+
+/* Colors */
+
+/* Classes */
+
+/* Smoke */
+.filter-white {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(3deg) brightness(106%) contrast(101%);
+}
+
+.color-white {
+    color: white;
+}
+
+/* Gold */
+.gold-color {
+    color: #FDBA54;
+    background-color: #FDBA54;
+    border-color: #FDBA54;
+}
+
+.color-gold {
+    color: #FDBA54;
+}
+
+.background-gold {
+    background-color: #FDBA54;
+}
+
+.border-gold {
+    border-color: #FDBA54;
+}
+
+/* ID's */
+#color-white {
+    color: white;
+}
+
+/* animations */
+.moving-image-center {
+    animation: moveUpDownFromCenter 2s ease-in-out infinite;
+}
+  
+@keyframes moveUpDownFromCenter {
+    0%, 100% {
+        transform: translate(-50%, -53%);
+    }
+    50% {
+        transform: translate(-50%, -47%);
+    }
+}

@@ -1,0 +1,285 @@
+* {
+    font-weight: 300;
+}
+.background-image {
+    filter: blur(500px) brightness(25%); 
+    width: 220vw;
+    height: 220vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rb-refrence {
+    font-weight: 500;
+    color: #FF07C9;
+    text-decoration: none;
+    background-color: rgb(57, 58, 59);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+h1, h1 a {
+    color: rgba(255, 255, 255,0.5) !important;
+    font-size: 40px;
+    font-weight: 800;
+}
+h1 a{
+    color: rgba(255, 255, 255,0.7);
+    font-size: 40px;
+    font-weight: 800;
+    text-decoration: none;
+}
+h1 a:hover{
+    text-decoration: underline;
+}
+h2 {
+    color: rgba(255, 255, 255,0.5);
+    font-size: 20px;
+    font-weight: 600;
+}
+h2 a{
+    color: rgba(255, 255, 255,0.7);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+h2 a:hover{
+    text-decoration: underline;
+}
+
+/* NOTES */
+.show {display: block !important;}
+.note-button {
+    position: relative;
+    border-radius: 8px;
+    background-color: #496771;
+    color: white;
+    padding: 16px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 35px;
+    transition: all 0.25s;
+    text-indent: 15px;
+
+    display: flex;
+    justify-content: left;
+    align-items:center;
+
+    z-index: 1;
+}
+  
+.note-button:hover {
+  background-color: #587883;
+}
+
+.note-arrow {
+    position: absolute;
+    right: 15px;
+    width: 15px;
+    height: auto;
+    top: 17.5px;
+}
+
+.rotate-arrow {
+    transform: rotate(180deg);
+    top: 13px;
+}
+
+#note {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    padding-top: 5px;
+}
+
+.note-content {
+    position: relative;
+    border-radius: 8px;
+    display: none;
+
+    background-color: rgba(57,66,72,0.7);
+    overflow: auto;
+    z-index: 0;
+
+    color: #9A9A9A;
+    padding-left: 1px 16px;
+    text-decoration: none;
+    height: 110%;
+    top: -10px;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.doc-scroll {
+    position: fixed;
+    overflow: hidden; 
+    overflow-y: scroll;
+    width: 75vw;
+    height: 90vh;
+    right: 10px;
+}
+
+.doc-content {
+    position: relative;
+    padding-right: 10px; /*added*/
+    display:inline-block; 
+    width: 100%;
+}
+
+.padding, div {
+    padding-top: 25px;
+}
+
+.left-border {
+    position: absolute;
+    background-color: #52C9ED;
+    width: 10px;
+    height: calc(100% - 25px);
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.function {
+    
+}
+
+.function-name {
+    position: relative;
+    display: flex;
+}
+
+.function-op {
+    color: #FFE977;
+}
+
+.function-parameter {
+    position: relative;
+    display: flex;
+    height: min-content;
+}
+
+.function-parameter-name {
+    margin-left: 40px;
+    color: #FA93D0;
+}
+
+.function-parameter-type {
+    font-size: 9px;
+    margin-left: 8px;
+    color: rgba(255, 255, 255,0.75);
+    align-self: flex-end;
+    padding-bottom: 3px;
+}
+
+.files {
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.23);
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.files-ul {
+    list-style-type: none;
+}
+
+.file-button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	outline: inherit;
+    color: rgba(255, 255, 255,0.75) !important;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+
+    padding-bottom: 10px;
+}
+.file-button:hover {
+    text-decoration: underline;
+}
+
+.package-name {
+    color: rgba(255, 255, 255,0.5);
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.folder-arrow {
+    transform: rotate(90deg);
+    width: 10px;
+    height: auto;
+    margin-left: -16px;
+}
+
+.rotate-folder-arrow {
+    transform: rotate(180deg);
+}
+
+.folder-content {
+    margin-top: -5px;
+    display: none;
+}
+
+.folder-button {
+    padding-left: 2px;
+}
+pre code {
+    max-height: 700px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+}
+
+.main-code-block-div {
+    width: 100%;
+    height: 30px;
+    background: #7E64C8;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    border: none;
+    display: block;
+}
+.copy-code-button {
+    position: relative;
+    left: calc(95% - 10px);
+    background: url("/static/assets/web/copy.png");
+    background-size: contain;
+    width: calc(56px*0.31);
+    height: calc(68px*0.31);
+    border: none;
+
+    transform: translateY(-95%);
+}
+
+
+
+/* CODE LINES */
+
+/* Screen Size Adjustments */
+@media (max-width: 1120px) {
+    .files {
+        width: 25%;
+    }
+    .doc-scroll{
+        width: 70%;
+    }
+    .file-button {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-ul {
+        width: 95vw;
+    }
+}

@@ -1,0 +1,113 @@
+.page {
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 80vw;
+    height: 90vh;
+    top: 49%;
+    bottom: 60%;
+}
+
+.tag{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255,255,255, 0.5);
+    border-radius: 100px;
+    background-color: rgba(255,255,255, 0.1);
+    margin-top: 0.875vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.page img {
+    width: 97%;
+    height: auto;
+}
+
+.dates {
+    font-weight: 100;
+    color: rgba(255,255,255, 0.95);
+    font-size: 15px;
+}
+
+.scroll-down {
+    position:absolute;
+    display: inline-block;
+
+    border-radius: 100%;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(255,255,255, 0.6);
+
+    width: 50px;
+    height: 50px;
+    
+    z-index: 999;
+
+    top: 80vh;
+}
+.scroll-down-img {
+    transform: rotate(90deg);
+    width: 60%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.next-project {
+    display: flex;
+    position: absolute;
+    width: 80vw;
+    top: 95vh;
+    height: min-content;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.next-project a {
+    color: rgba(255,255,255, 0.75) !important;
+}
+
+.next-project-title {
+    position: relative;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 21px;
+}
+.arrow {
+    vertical-align: middle;
+    margin-left: 4px; /* Adjust the spacing between the text and the arrow */
+    transition: all 0.25s ease-in-out;
+    width: 32px;
+    height: auto;
+    padding-left: 10px;
+}
+
+.link:hover .arrow {
+    margin-left: 25px; /* Adjust the spacing during hover */
+}
+
+/* Sizings */
+.w-70 {
+    width: 70% !important;
+}
+
+/* Screen Size Adjustments */
+@media (max-width: 1400px) {
+    .page {
+       height: 82vh; 
+    }
+}
+@media (max-height: 860px) {
+    .page {
+       height: 75vh; 
+    }
+}

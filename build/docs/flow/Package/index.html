@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+        <title>Package</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="icon" type="image/x-icon" href="/assets/web/Logo.png">
+
+        <link rel="preload" href="/static/css/global.css" as="style">
+        <link rel="preload" href="/static/js/global.js" as="script">
+
+        <link rel="stylesheet" href="/static/css/markdown.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/global.css" media="print" onload="this.media='all'">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <script src="/static/js/global.js"></script>
+        
+        <link rel="stylesheet" href="/static/js/project.js">
+        <link rel="stylesheet" href="/static/css/projectpage.css">
+</head>
+
+<body>
+        <img src="/assets/web/backdrop.png" alt="Background Image" class="background-image unselectable">
+
+        
+          <div class="content" id="content">
+            <link rel="stylesheet" href="/static/css/docs.css">
+            <link rel="stylesheet" href="/static/css/highlight-dark-theme.css">
+            <link rel="stylesheet" href="/static/css/docs-markdown.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+            <script src="/static/js/docs.js"></script>
+            
+            <script>hljs.highlightAll();</script>
+
+            
+            
+            
+            <div class="files">
+                <ul class="files-ul clearfix">
+                    <h6 class="package-name">flow</h6>
+                    <a class="file-button" href="/docs/flow/">Overview</a>
+
+                    
+
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                        <li class="file">
+                                               
+                          <a class="file-button" href="/docs/flow/Getting-Started">Getting-Started</a>
+                          
+                          
+                      
+                    
+                      
+                      
+                        <li class="file">
+                                               
+                          <a class="file-button" href="/docs/flow/"></a>
+                          
+                          
+                      
+                    
+                      
+                      
+                        <li class="file">
+                                               
+                          <a class="file-button" href="/docs/flow/Package">Package</a>
+                          
+                          
+                      
+                    
+                      
+                      
+                        <li class="file">
+                                               
+                          <a class="file-button" href="/docs/flow/Types">Types</a>
+                          
+                          
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                </ul>
+            </div>
+            
+            <div class="doc-scroll clearfix">
+                <div class="doc-content">
+                  <h2 id="manager"><a href="#manager">Manager</a></h2>
+<p>(|NewManager|)[name:string][inputs:{<a href="/adocspi/flow/Types#input">Input</a>}][type:”Vector3” | “Number” | “Boolean”][deadzone:number | nil ?]
+-&gt; <a href="/docs/flow/Types#manager">Manager</a></p>
+
+<ul>
+  <li><strong>name</strong>: is the name of  your manager,</li>
+  <li><strong>inputs</strong>: is a list of your inputs that you want to use for your manager,</li>
+  <li><strong>type</strong>: is the return type when your input is activated,</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>deadzone</strong>: is if the gamepad thumbstick is stuck at like 0.0001232742 or -0.01232742 it will convert to 0</td>
+          <td>Defaults to 0.1</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<p><br /><br /></p>
+
+<h2 id="input"><a href="#input">Input</a></h2>
+<p>(|NewInput|)[input:Enum.KeyCode | Enum.UserInputType][inverted:boolean ?][axis:Enum.Axis | “X” | “Y” | “Z” ?]
+-&gt; <a href="/docs/flow/Types#input">Input</a></p>
+
+<ul>
+  <li><strong>input</strong>: is the input for current input</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>inverted</strong>: is when it inverts the return type</td>
+          <td>Defaults to false</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>axis</strong>: is which axis to put the input on if manager type is Vector3</td>
+          <td>Defaults to X</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+                </div>
+            </div>
+          </div>
+        
+</body>
+
+</html>

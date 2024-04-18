@@ -1,0 +1,134 @@
+.menu {
+    position: absolute;
+    top: 100vh;
+    width: 950px;
+    transition: top 0.3s ease;
+
+    z-index: 9999;
+
+    height: fit-content;
+
+    left: 30%;
+}
+
+.menu-content {
+    padding-top: 0%;
+}
+
+.menu-menu {
+    display: flex;
+    height: fit-content;
+}
+
+.menu.active {
+    top: 10%;
+}
+
+.content.active {
+    transform: translateY(100vh); /* Adjust the value based on your menu's height */
+}
+
+.moveable-element {
+    position: relative;
+    top: 0;
+    transition: top 0.5s, opacity 0.5s;
+    opacity: 1;
+}
+
+.moveable-element.moved {
+    top: -10vh;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    cursor: default;
+}
+
+.menuButton {
+    background-color: transparent;
+    border: transparent;
+}
+.menuButton img {
+    background-color: transparent;
+}
+
+.content {
+    transition: transform 0.3s ease;
+}
+
+.menu-link {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-size: 32pt;
+    padding-right: 15px;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+
+}
+.menu-link:hover + .menu-link-descriptor {
+    padding-left: 50px
+}
+
+.menu-link-descriptor {
+    padding-left: 15px;
+    color: #FFE977;
+    font-weight: 100;
+    font-size: 15pt;
+    transition: padding-left 0.25s ease-in-out;
+}
+
+.menu-list {
+    list-style-type: none;
+}
+
+.menu-title {
+    font-size: 32pt;
+    color: rgba(255, 255, 255, 0.50);
+    width: 20%;
+}
+
+.line{
+    width: 2.5px;
+    height: 100%;
+}
+
+/* Screen Size Adjustments */
+@media (max-width: 1300px) {
+    .menu {
+       left: 15%; 
+    }
+}
+
+
+@media (max-width: 850px) {
+    .menu {
+       left: 8%; 
+    }
+    .menu-link {
+        font-size: 18pt;
+    }
+    .menu-link-descriptor {
+        font-size: 13pt;
+    }
+    .menu-title {
+        font-size: 20pt;
+    }
+}
+
+@media (max-width: 550px) {
+    .menu {
+       left: 2%; 
+    }
+    .menu-link {
+        font-size: 14pt;
+    }
+    .menu-link-descriptor {
+        font-size: 6pt;
+    }
+}
+

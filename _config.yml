@@ -1,0 +1,12 @@
+destination: ./build
+
+collections:
+  projects:
+    output: true
+  extras:
+    output: true
+  blog:
+    output: true
+  docs:
+    output: true
+    permalink: /docs/:path/

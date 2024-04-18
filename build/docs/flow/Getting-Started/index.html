@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+        <title>Getting Started</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="icon" type="image/x-icon" href="/assets/web/Logo.png">
+
+        <link rel="preload" href="/static/css/global.css" as="style">
+        <link rel="preload" href="/static/js/global.js" as="script">
+
+        <link rel="stylesheet" href="/static/css/markdown.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/global.css" media="print" onload="this.media='all'">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <script src="/static/js/global.js"></script>
+        
+        <link rel="stylesheet" href="/static/js/project.js">
+        <link rel="stylesheet" href="/static/css/projectpage.css">
+</head>
+
+<body>
+        <img src="/assets/web/backdrop.png" alt="Background Image" class="background-image unselectable">
+
+        
+          <div class="content" id="content">
+            <link rel="stylesheet" href="/static/css/docs.css">
+            <link rel="stylesheet" href="/static/css/highlight-dark-theme.css">
+            <link rel="stylesheet" href="/static/css/docs-markdown.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+            <script src="/static/js/docs.js"></script>
+            
+            <script>hljs.highlightAll();</script>
+
+            
+            
+            
+            <div class="files">
+                <ul class="files-ul clearfix">
+                    <h6 class="package-name">flow</h6>
+                    <a class="file-button" href="/docs/flow/">Overview</a>
+
+                    
+
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                        <li class="file">
+                                               
+                          <a class="file-button" href="/docs/flow/Getting-Started">Getting-Started</a>
+                          
+                          
+                      
+                    
+                      
+                      
+                        <li class="file">
+                                               
+                          <a class="file-button" href="/docs/flow/"></a>
+                          
+                          
+                      
+                    
+                      
+                      
+                        <li class="file">
+                                               
+                          <a class="file-button" href="/docs/flow/Package">Package</a>
+                          
+                          
+                      
+                    
+                      
+                      
+                        <li class="file">
+                                               
+                          <a class="file-button" href="/docs/flow/Types">Types</a>
+                          
+                          
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                </ul>
+            </div>
+            
+            <div class="doc-scroll clearfix">
+                <div class="doc-content">
+                  <h1 id="getting-started">Getting Started</h1>
+<hr />
+
+<p>First import the module</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="n">flow</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">Flow</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Now that we have imported the Flow module we can now make the <a href="/api/flow/Package#inputs">inputs</a> for your manager</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="n">inputs</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">flow</span><span class="p">.</span><span class="n">NewInput</span><span class="p">(</span><span class="n">Enum</span><span class="p">.</span><span class="n">KeyCode</span><span class="p">.</span><span class="n">Space</span><span class="p">),</span>
+    <span class="n">flow</span><span class="p">.</span><span class="n">NewInput</span><span class="p">(</span><span class="n">Enum</span><span class="p">.</span><span class="n">KeyCode</span><span class="p">.</span><span class="n">W</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>We can now create the <a href="/api/flow/Package">manager</a> using our inputs we specified</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">local</span> <span class="n">manager</span> <span class="o">=</span> <span class="n">flow</span><span class="p">.</span><span class="n">NewManager</span><span class="p">(</span><span class="s2">"TestManagerName"</span><span class="p">,</span> <span class="n">inputs</span><span class="p">,</span> <span class="s2">"Boolean"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Now that we have the input <a href="/api/flow/Package">manager</a> we can now connect to them to listen for when they are being active</p>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">manager</span><span class="p">.</span><span class="n">Began</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="k">function</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Input Began: "</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<span class="k">end</span><span class="p">)</span>
+<span class="n">manager</span><span class="p">.</span><span class="n">Ended</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="k">function</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Input Ended: "</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<span class="k">end</span><span class="p">)</span>
+</code></pre></div></div>
+
+<hr />
+<h1 id="full-example"><a href="#full-example">Full Example</a></h1>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">--// Services</span>
+<span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">"ReplicatedStorage"</span><span class="p">)</span>
+
+<span class="c1">--// Directories</span>
+<span class="kd">local</span> <span class="n">packages</span> <span class="o">=</span> <span class="n">ReplicatedStorage</span><span class="p">:</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">"packages"</span><span class="p">)</span>
+
+<span class="c1">--// Packages</span>
+<span class="kd">local</span> <span class="n">flow</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">packages</span><span class="p">.</span><span class="n">Flow</span><span class="p">)</span>
+
+<span class="c1">--// Inputs</span>
+<span class="kd">local</span> <span class="n">movementInputs</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">flow</span><span class="p">.</span><span class="n">NewInput</span><span class="p">(</span><span class="n">Enum</span><span class="p">.</span><span class="n">KeyCode</span><span class="p">.</span><span class="n">Thumbstick1</span><span class="p">),</span> 
+    <span class="n">flow</span><span class="p">.</span><span class="n">NewInput</span><span class="p">(</span><span class="n">Enum</span><span class="p">.</span><span class="n">KeyCode</span><span class="p">.</span><span class="n">W</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="s2">"Y"</span><span class="p">),</span> 
+    <span class="n">flow</span><span class="p">.</span><span class="n">NewInput</span><span class="p">(</span><span class="n">Enum</span><span class="p">.</span><span class="n">KeyCode</span><span class="p">.</span><span class="n">S</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="s2">"Y"</span><span class="p">),</span> 
+    <span class="n">flow</span><span class="p">.</span><span class="n">NewInput</span><span class="p">(</span><span class="n">Enum</span><span class="p">.</span><span class="n">KeyCode</span><span class="p">.</span><span class="n">A</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">),</span> 
+    <span class="n">flow</span><span class="p">.</span><span class="n">NewInput</span><span class="p">(</span><span class="n">Enum</span><span class="p">.</span><span class="n">KeyCode</span><span class="p">.</span><span class="n">D</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">--// Input Managers</span>
+<span class="kd">local</span> <span class="n">movementManager</span> <span class="o">=</span> <span class="n">flow</span><span class="p">.</span><span class="n">NewManager</span><span class="p">(</span><span class="s2">"Movement"</span><span class="p">,</span> <span class="n">movementInputs</span><span class="p">,</span> <span class="s2">"Vector3"</span><span class="p">)</span>
+
+<span class="n">movementManager</span><span class="p">.</span><span class="n">Began</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="k">function</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Input Began: "</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<span class="k">end</span><span class="p">)</span>
+<span class="n">movementManager</span><span class="p">.</span><span class="n">Ended</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="k">function</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Input Ended: "</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<span class="k">end</span><span class="p">)</span>
+</code></pre></div></div>
+
+                </div>
+            </div>
+          </div>
+        
+</body>
+
+</html>
