@@ -2,6 +2,7 @@
 layout: project
 name: Roblox UGC
 tags: 
+    - Project
     - Modeling
     - 3D
     - Roblox UGC

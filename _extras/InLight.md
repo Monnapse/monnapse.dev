@@ -1,7 +1,8 @@
 ---
 layout: project
 name: InLight
-tags: 
+tags:
+    - Extras 
     - Lua
     - Roblox Plugin
 created: December 22 2023 10:13 PM MST

@@ -71,12 +71,46 @@ markdown: True
                   </div>
               </div>
 
-              <div class="next-project moveable-element center-horizontally">
-                
-                      <h1 class="next-project-title"></h1>
-                      <a href="/projects/{{nexttitle}}" class="moveable-element button link">next project<img src="/assets/web/Arrow.png" alt="Right Arrow" class="arrow"></a>
-                
-              </div>
+              {% assign type = "" %}
+              {% for tag in page.tags %}
+                {% if tag == "Project" or tag == "project" %}
+                  {% assign type = "projects" %}
+                {% elsif tag == "Extras" or tag == "extras" %}
+                  {% assign type = "extras" %}
+                {% endif %}
+              {% endfor %}
+
+              {% assign array = none %}
+
+              {% if type != "" %}
+                {% if type == "projects" %}
+                  {% assign array = site.projects %}
+                {% elsif type == "extras" %}
+                  {% assign array = site.extras %}
+                {% endif %}
+
+                {% assign index = 0 %}
+                {% assign page_index = none %}
+                {% for project in array %}
+                  {% if project.name == page.name %}
+                    {% assign page_index = index | plus: 1 %}
+                    {% break %}
+                  {% endif %}
+                  {% assign index = index | plus: 1 %}
+                {% endfor %}
+              {% endif %}
+
+              {% if page_index and array[page_index] != none %}
+                {% assign next_project = array[page_index] %}
+                <div class="next-project moveable-element center-horizontally">
+                  <h1 class="next-project-title">{{next_project.name}}</h1>
+
+                  {% capture filename %}{{ next_project.path | split: "/" | last }}{% endcapture %}
+                  {% capture filename_without_extension %}{{ filename | split: "." | first }}{% endcapture %}
+
+                  <a href="/{{type}}/{{filename_without_extension}}" class="moveable-element button link">next project<img src="/assets/web/Arrow.png" alt="Right Arrow" class="arrow"></a>
+                </div>
+              {% endif %}
           </div>
         {% endif %}
 </body>

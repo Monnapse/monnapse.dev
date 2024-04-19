@@ -2,6 +2,7 @@
 layout: project
 name: Infernal Retribution (Coming Soon)
 tags: 
+    - Project
     - Roblox
     - Modeling
     - UI
