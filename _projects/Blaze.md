@@ -6,7 +6,7 @@ tags:
     - Pyrotechnics 
     - ESP32
 created: October 18 2023 03:00 PM MST
-updated: April 18 2024 11:54 AM MST
+updated: April 21 2024 3:09 PM MST
 ---
 
 <img src="/assets/img/blaze/banner.png" id="main-image" width="1250">
@@ -26,6 +26,7 @@ Blaze is a wireless firework igniter system I made back in 2023, I made it to cr
 <div class="grid">
   <img src="/assets/img/blaze/Web.png" width="100%">
   <img src="/assets/img/blaze/Mobile-Web.png" width="100%">
+  <img src="/assets/img/blaze/Software.png" width="100%">
 </div>
 
 
@@ -35,4 +36,12 @@ Blaze is a wireless firework igniter system I made back in 2023, I made it to cr
 <div class="grid">
   <img src="/assets/img/blaze/iPhone-APP-1.png" width="100%">
   <img src="/assets/img/blaze/iPhone-APP-2.png" width="100%">
+  <img src="/assets/img/blaze/iPhone-Web-App-1.png" width="100%">
+  <img src="/assets/img/blaze/iPhone-Web-App-Cues-1.png" width="100%">
+  <img src="/assets/img/blaze/iPhone-Web-App-Cues.png" width="100%">
+  <img src="/assets/img/blaze/iPhone-Web-App-Shows-1.png" width="100%">
+  <img src="/assets/img/blaze/iPhone-Web-App-Shows.png" width="100%">
+  <img src="/assets/img/blaze/iPhone-Web-App-Unit-Information.png" width="100%">
+  <img src="/assets/img/blaze/iPhone-Web-App-Units.png" width="100%">
+  <img src="/assets/img/blaze/iPhone-Web-App.png" width="100%">
 </div>
