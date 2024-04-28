@@ -32,5 +32,5 @@ ASTROKING is a discord bot I made back in 2022, I made this bot to manage all my
 </div>
 
 <video controls>
-  <source src="/assets/videos/astroking/2024-04-17 20-38-03.mp4" type="video/mp4">
+  <source src="/assets/videos/astroking/2024-04-17 20-38-03.mp4" type="video/mp4" width="100%">
 </video>
