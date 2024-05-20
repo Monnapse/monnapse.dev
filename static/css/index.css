@@ -111,7 +111,7 @@
 }
 
 .links {
-    margin-top: 35px;
+    margin-top: 5px;
 }
 
 /* CSS for screens 768px and smaller */
@@ -143,6 +143,7 @@
         left: 10%;
     }
     .info-container {
+        top: 25%;
         position: relative;
         width: 90%;
     }
@@ -155,6 +156,9 @@
 }
 
 @media (max-width: 870px) {
+    .info-container {
+        top: 25%;
+    }
     .main-title {
         font-size: 85px;
         line-height: 70px;
@@ -177,9 +181,15 @@
     }
 }
 
+@media (max-height: 1200px) {
+    .info-container {
+        top: 25%;
+    }
+}
+
 @media (max-height: 870px) {
     .links {
-        margin-top: 10px;
+        margin-top: 0px;
     }
 }
 

@@ -7,6 +7,8 @@ collections:
     output: true
   blog:
     output: true
+  gallery:
+    output: true
   docs:
     output: true
     permalink: /docs/:path/
