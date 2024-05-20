@@ -61,7 +61,7 @@
 
             {% assign length = 0 %}
             {% for file in gallery %}
-                {% if file.path contains "assets/img/gallery/" %}
+                {% if file.path contains "assets/gallery/" %}
                     {% if file.extname == ".png" or file.extname == ".jpg" %}
                         {% assign length = length | plus: 1 %}
                     {% endif %}
@@ -73,7 +73,19 @@
             {% assign currentColumnCount = 0 %}
             <div class="column">
             {% for file in gallery %}
-                {% if file.path contains "assets/img/gallery/" %}
+                {% if file.path contains "assets/gallery/" %}
+                    {% if file.extname == ".mp4" %}
+                        {% if currentColumnCount >= imagesPerColumn %}
+                            {% assign currentColumnCount = 0 %}
+                            </div>  
+                            <div class="column">
+                        {% endif %}
+                            
+                        {% assign currentColumnCount = currentColumnCount | plus: 1 %}
+                        <video controls>
+                            <source src="{{ file.path }}" type="video/{{file.extname | remove: '.'}}">
+                        </video>
+                    {% endif %}
                     {% if file.extname == ".png" or file.extname == ".jpg" %}
                         {% if currentColumnCount >= imagesPerColumn %}
                             {% assign currentColumnCount = 0 %}
