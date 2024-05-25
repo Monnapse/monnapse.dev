@@ -82,9 +82,9 @@
                         {% endif %}
                             
                         {% assign currentColumnCount = currentColumnCount | plus: 1 %}
-                        <video controls>
+                        <!--<video style="width:100%" controls>
                             <source src="{{ file.path }}" type="video/{{file.extname | remove: '.'}}">
-                        </video>
+                        </video>-->
                     {% endif %}
                     {% if file.extname == ".png" or file.extname == ".jpg" %}
                         {% if currentColumnCount >= imagesPerColumn %}
